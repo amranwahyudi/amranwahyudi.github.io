@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Web Warung Jaya Indah</title>
+		<style type="text/css">
+			
+		</style>
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="text.css" type="text/css">
+ 	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<h1>Warung Jaya indah</h1>
+				<nav>
+					<ul>
+						<li><a href="" class="current">Beranda</a></li>
+						<li><a href="daftar masakan.html">daftar masakan</a></li>
+						<li><a href="Pemesanan.html">Pemesanan</a></li>
+						<li><a href="tentang.html">tentang</a></li>
+						<li><a href="kontak.html">kontak</a></li>
+					</ul>
+				</nav>
+			</header>
+			<section class="courses">
+<articel>
+
+			
+﻿	<table border="1" cellpadding=5>
+	<form name="amran"> 
+		<tr>
+			<th>No</th>
+			<th> Nama Nakanan</th>
+			<th>Harga</th>
+			<th>Jumlah pesanan</th>
+			<th>Sub Total</th>
+		</tr>
+
+		<tr>
+			<td>1</td>
+			<td width="400">soto Ayam</td>
+			<td><input sub="text" value="Rp.15.000" disabled></td>
+			<td><input sub="text" name="jumlah1" onChange="total1()"></td>
+			<td><input sub="text" name="sub1"></td>
+		</tr>
+
+		<tr>
+			<td>2</td>
+			<td width="400">pecel</td>
+			<td><input sub="text" value="Rp.11.000" disabled></td>
+			<td><input sub="text" name="jumlah2" onChange="total2()"></td>
+			<td><input sub="text" name="sub2"></td>
+		</tr>
+
+		<tr>
+			<td>3</td>
+			<td width="400">Sayur Sop</td>
+			<td ><input sub="text" value="Rp. 13.000" disabled></td>
+			<td ><input sub="text" name="jumlah3" onChange="total3()"></td>
+			<td><input sub="text" name="sub3"></td>
+		</tr>""
+
+		<tr>
+			<td>4</td>
+			<td width="400">Sayur asem</td>
+			<td><input sub="text" value="Rp. 15.000" disabled></td>
+			<td><input sub="text" name="jumlah4" onChange="total4()"></td>
+			<td><input sub="text" name="sub4"></td>
+		</tr>
+
+		<tr>
+			<td>5</td>
+			<td width="400">Sayur Lodeh</td>
+			<td><input sub="text" width="200" value="Rp. 15.000" disabled></td>
+			<td><input sub="text" name="jumlah5" onChange="total5()"></td>
+			<td><input sub="text" name="sub5"></td>
+		</tr>
+
+<br>	
+		<tr>
+			<td colspan="3"></td>
+			<td><button type="button" onclick="hitung()">TOTAL SELURUHNYA</button></td>
+			<td><input type"text" name="totalsemua" readonly></td>
+		</tr>
+
+	</table>
+</form>
+
+	<script>
+		function total1(){
+	document.amran.sub1.value = parseInt(15.000 * document.amran .jumlah1.value);
+	}
+		function total2(){
+		document.amran .sub2.value = parseInt(11.000 * document.amran .jumlah2.value);
+		}
+			function total3(){
+			document.amran .sub3.value = parseInt(13.000 * document.amran.jumlah3.value);
+			}
+				function total4(){
+					document.amran .sub4.value = parseInt(15.000 * document.amran .jumlah4.value);
+				}
+					function total5(){
+						document.amran .sub5.value = parseInt(13.000 * document.amran .jumlah5.value);
+					}
+
+		function hitung(){
+		document.amran .totalsemua.value = parseInt(document.amran .sub1.value) + parseInt(document.amran .sub2.value) + parseInt(document.amran .sub3.value) + parseInt(document.amran .sub4.value) + parseInt(document.amran .sub5.value);
+	}
+	</script>
+</articel>
+</selection>
+
+
+			<aside>
+				<section class="popular-recipes">
+					<h2>Masakan Populer</h2>
+					<a href="">Sayur Sop</a>
+					<a href="">Sayur Asem</a>
+					<a href="">Sayur Lodeh</a>
+					<a href="">Sayur Bayam</a>
+<a href="">Soto</a>
+      <a href="">pecel</a>
+				</section>
+				<section class="contact-details">
+					<h2>Kontak</h2>
+					<p>Warung Jaya Indah<br />
+						No WA: 082144821836
+				</section>
+			</aside>
+			<footer>
+				&copy; 185410074_AMRAN WAHYUDI_
+				STMIK AKAKKOM YOGYAKARTA
+			</footer>
+		</div><!-- .wrapper -->
+	</body>
+</html>
